@@ -4,6 +4,10 @@
  * @param {number} n index
  * @returns {number}
  */
-function pow (m, n) {
 
+const m = prompt ('Введите число', 100);
+const n = prompt ('Введите степень', 2);
+function pow (m,n) {
+  return Math.pow(m,n);
 }
+
