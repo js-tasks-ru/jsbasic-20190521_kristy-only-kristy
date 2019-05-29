@@ -11,7 +11,18 @@ function print (text) {
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
  */
-function isValid (name) {
+function isValid (text) {
+	if (text === null) {
+		return false;
+	}
+	const textArray = text.split('');
+	if (textArray.length >= 4 && !textArray.includes(' '))
+	{
+		return true;
+	}
+	else {
+		return false;
+	}
 }
 
 function sayHello () {
@@ -24,5 +35,5 @@ function sayHello () {
     }
 }
 
-sayHello();
+
 
